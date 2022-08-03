@@ -6,4 +6,5 @@
     <fullyQualifiedTypeName name="cooperation.Subway"/>
     <fullyQualifiedTypeName name="staticex.Student"/>
     <fullyQualifiedTypeName name="singleton.Company"/>
+    <fullyQualifiedTypeName name="inheritance.VIPCustomer"/>
 </qualifiedTypeNameHistroy>
