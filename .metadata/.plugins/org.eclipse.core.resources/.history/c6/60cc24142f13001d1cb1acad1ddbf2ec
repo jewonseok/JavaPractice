@@ -20,7 +20,6 @@ public class Student {
 		subject.setName(name);
 		subject.setScorePoint(score);
 		
-		System.out.println(score);
 		subjectList.add(subject);
 	}
 	
@@ -30,11 +29,11 @@ public class Student {
 		for(Subject subject : subjectList) {
 			total += subject.getScorePoint();
 			
-			System.out.println("í•™ìƒ" + studentName + "ë‹˜ì˜" + subject.getName() + "ê³¼ëª©ì˜ ì„±ì ì€"
-					+ subject.getScorePoint() + "ì  ì…ë‹ˆë‹¤.");
+			System.out.println("ÇĞ»ı" + studentName + "´ÔÀÇ" + subject.getName() + "°ú¸ñÀÇ ¼ºÀûÀº"
+					+ subject.getScorePoint() + "Á¡ ÀÔ´Ï´Ù.");
 		}
 		
-		System.out.println("í•™ìƒ" + studentName + "ë‹˜ì˜ ì´ì ì€ " + total + "ì  ì…ë‹ˆë‹¤.");
+		System.out.println("ÇĞ»ı" + studentName + "´ÔÀÇ ÃÑÁ¡Àº " + total + "Á¡ ÀÔ´Ï´Ù.");
 	}
 
 }
