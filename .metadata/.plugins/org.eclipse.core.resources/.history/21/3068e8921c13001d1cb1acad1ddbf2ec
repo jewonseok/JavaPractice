@@ -1,0 +1,10 @@
+package test;
+
+public class ArrayListTest {
+
+	public static void main(String[] args) {
+		
+		ArrayListTest<String> list = new ArrayListTest<String>();
+	}
+
+}
