@@ -23,8 +23,5 @@ public class MyClass implements MyInterface {
 		
 		X xClass = myClass;
 		xClass.x();
-	} //25분까지봄
-	
-	
-
+	}
 }
