@@ -1,46 +1,34 @@
-package collection.arraylist;
+package collection.treeset;
 
-import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.TreeSet;
 
 import collection.Member;
 
-public class MemberArrayList {
+public class MemberTreeSet {
 	
-	private ArrayList<Member> arrayList;
+	private TreeSet<Member> treeset;
 	
-	public MemberArrayList() {
-		arrayList = new ArrayList<Member>();
+	public MemberTreeSet() {
+		treeset = new TreeSet<Member>();
 	}
 	
 	public void addMember(Member member) {
-		arrayList.add(member);
+		treeset.add(member);
 	}
 	
 	public boolean removeMember(int memberId) {
 		
-		/*for(int i = 0; i < arrayList.size(); i++) {
-			Member member = arrayList.get(i);
-			int tempId = member.getMemberId();
-			if(memberId == tempId) {
-				arrayList.remove(i);
-				return true;
-			}
-		}*/
-		
-		
-		Iterator<Member> iterator = arrayList.iterator();
+		Iterator<Member> iterator = treeset.iterator();
 		while( iterator.hasNext() ) {
 			Member member = iterator.next();
 			
 			int tempId = member.getMemberId();
 			if(memberId == tempId) {
-				arrayList.remove(member);
+				treeset.remove(member);
 				return true;
 			}
 		}
-		
-		
 		
 		System.out.println(memberId + "가 존재하지 않습니다.");
 		return false;
@@ -48,7 +36,7 @@ public class MemberArrayList {
 	
 	public void showAll() {
 		
-		for(Member member : arrayList) {
+		for(Member member : treeset) {
 			System.out.println(member);
 		}
 		System.out.println("=============================");
