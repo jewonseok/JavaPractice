@@ -1,9 +1,12 @@
 package serialization;
 
+import java.io.Externalizable;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInput;
 import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
@@ -12,7 +15,7 @@ class Person implements Serializable{
 	private static final long serialVersionUID = -3270284619215026984L;
 	
 	String name;
-	String title;
+	transient String title;
 	
 	public Person() {}
 	public Person(String name, String title) {
@@ -23,6 +26,7 @@ class Person implements Serializable{
 	public String toStirng() {
 		return name + "," + title;
 	}
+	
 }
 
 public class SerializationTest {
